@@ -233,11 +233,12 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/botao"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/font2"
+                android:onClick="Trailer"
                 android:paddingLeft="-30dp"
                 android:paddingTop="1sp"
-                android:text="PRIMEIRA TEMPORADA"
-                android:textSize="28dp"
+                android:text="TRAILERS"
+                android:textSize="20dp"
                 app:backgroundTint="#00FFFFFF"
                 app:rippleColor="#00FFFFFF" />
 
@@ -256,26 +257,28 @@
                 app:srcCompat="@drawable/cincoimghome" />
 
             <Button
-                android:id="@+id/btntrailerdois"
+                android:id="@+id/btnelenco"
                 android:layout_width="390dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/botao"
-                android:fontFamily="@font/font1"
-                android:text="SEGUNDA TEMPORADA"
-                android:textSize="28dp"
-                android:paddingLeft="-30dp"
+                android:fontFamily="@font/font2"
+                android:onClick="Pesquisa"
+                android:paddingLeft="-20dp"
                 android:paddingTop="1sp"
+                android:text="CONHEÇA O ELENCO"
+                android:textSize="20dp"
                 app:backgroundTint="#00FFFFFF"
                 app:rippleColor="#00FFFFFF" />
 
+
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="100dp"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="320dp"
-                android:layout_marginTop="-100dp"
-                app:srcCompat="@drawable/youtube" />
+                android:layout_marginTop="-90dp"
+                app:srcCompat="@drawable/iconpesq" />
 
             <ImageView
                 android:layout_width="140dp"
@@ -285,61 +288,63 @@
                 app:srcCompat="@drawable/klausimghome" />
 
             <Button
-                android:id="@+id/btntrailertres"
+                android:id="@+id/btnlocalizacao"
                 android:layout_width="390dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/botao"
-                android:fontFamily="@font/font1"
-                android:text="TERCEIRA TEMPORADA"
-                android:textSize="28dp"
-                android:paddingLeft="-30dp"
+                android:fontFamily="@font/font2"
+                android:onClick="verMapa"
+                android:paddingLeft="-25dp"
                 android:paddingTop="1sp"
+                android:text="LOCAL DAS GRAVAÇÕES"
+                android:textSize="17dp"
                 app:backgroundTint="#00FFFFFF"
                 app:rippleColor="#00FFFFFF" />
 
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="320dp"
-                android:layout_marginTop="-100dp"
-                app:srcCompat="@drawable/youtube" />
+                android:layout_width="94dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="-90dp"
+                app:srcCompat="@drawable/iconlocalizacao" />
 
             <ImageView
                 android:layout_width="137dp"
                 android:layout_height="114dp"
                 android:layout_marginLeft="-15dp"
-                android:layout_marginTop="-105dp"
+                android:layout_marginTop="-90dp"
                 app:srcCompat="@drawable/vaniaimghome" />
 
             <Button
-                android:id="@+id/btnrenovacao"
+                android:id="@+id/btncontato"
                 android:layout_width="390dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/botao"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/font2"
+                android:onClick="Email"
                 android:paddingLeft="-30dp"
                 android:paddingTop="1sp"
-                android:text="RENOVAÇÃO"
-                android:textSize="30dp"
+                android:text="ENTRE EM CONTATO"
+                android:textSize="17dp"
                 app:backgroundTint="#00FFFFFF"
                 app:rippleColor="#00FFFFFF" />
 
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="100dp"
+                android:layout_width="106dp"
+                android:layout_height="71dp"
                 android:layout_marginLeft="320dp"
-                android:layout_marginTop="-100dp"
-                app:srcCompat="@drawable/youtube" />
+                android:layout_marginTop="-90dp"
+                app:srcCompat="@drawable/iconemail" />
 
             <ImageView
                 android:layout_width="149dp"
                 android:layout_height="106dp"
                 android:layout_marginLeft="-10dp"
-                android:layout_marginTop="-105dp"
+                android:layout_marginTop="-85dp"
                 app:srcCompat="@drawable/alissonimghome" />
 
 

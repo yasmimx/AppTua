@@ -3,7 +3,6 @@ package com.example.apptua;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -80,6 +79,35 @@ public class personagens extends AppCompatActivity {
             }
         });
 
+        Button bt6 = (Button) findViewById(R.id.btncinco1);
+
+        bt6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(personagens.this, cinco.class);
+                startActivity(it);
+                finish();
+            }
+        });
+
+        Button bt7 = (Button) findViewById(R.id.btnben);
+
+        bt7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(personagens.this, ben.class);
+                startActivity(it);
+                finish();
+            }
+        });
+
+        Button bt8 = (Button) findViewById(R.id.btnvictor);
+
+        bt8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(personagens.this, vania.class);
+                startActivity(it);
+                finish();
+            }
+        });
 
     }
 }

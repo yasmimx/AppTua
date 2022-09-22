@@ -146,6 +146,7 @@
                 app:srcCompat="@drawable/four" />
 
             <Button
+                android:id="@+id/btncinco1"
                 android:layout_width="450dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="0dp"
@@ -168,6 +169,7 @@
                 app:srcCompat="@drawable/five" />
 
             <Button
+                android:id="@+id/btnben"
                 android:layout_width="450dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="0dp"
@@ -190,6 +192,7 @@
                 app:srcCompat="@drawable/six" />
 
             <Button
+                android:id="@+id/btnvictor"
                 android:layout_width="450dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="0dp"

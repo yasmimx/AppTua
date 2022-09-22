@@ -1,8 +1,12 @@
 package com.example.apptua;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.camera2.CameraManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -10,11 +14,16 @@ import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
-public class klaus extends AppCompatActivity {
+
+public class klaus<cameraManager, toggleFlashLightOnOff> extends AppCompatActivity {
 
     boolean hasCameraFlash = false;
     boolean flashOn = false;
+    private ToggleButton toggleFlashLightOnOff;
+    private CameraManager cameraManager;
+    private String getCameraID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +45,11 @@ public class klaus extends AppCompatActivity {
             }
         });
 
-        ImageButton bt4 = (ImageButton) findViewById(R.id.imgbtnhome);
+        ImageButton bt4 = (ImageButton) findViewById(R.id.imgbtnvoltar);
 
         bt4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(klaus.this, MainActivity.class);
+                Intent it = new Intent(klaus.this, personagens.class);
                 startActivity(it);
                 finish();
             }
@@ -58,15 +67,18 @@ public class klaus extends AppCompatActivity {
 
         Switch btn5 = (Switch) findViewById(R.id.switch1);
 
-                btn5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                        if (isChecked) {
+        btn5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
 
-                            Toast.makeText(klaus.this, "Lanterna Ativada", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-
+                    Toast.makeText(klaus.this, "Lanterna Ativada", Toast.LENGTH_SHORT).show();
+                }
             }
-        }
+        });
+
+    }
+
+
+}
+
