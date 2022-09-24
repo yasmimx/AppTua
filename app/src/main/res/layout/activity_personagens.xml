@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".personagens"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".personagens">
 
     <TextView
         android:id="@+id/textView"
@@ -13,9 +13,9 @@
         android:layout_height="52dp"
         android:background="@null"
         android:fontFamily="@font/font1"
-        android:text="PERSONAGENS"
+        android:text="@string/textpersonagens"
         android:textColor="#FFFF"
-        android:textSize="45dp"
+        android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +86,7 @@
                 android:fontFamily="@font/font1"
                 android:paddingLeft="-100dp"
                 android:paddingTop="1sp"
-                android:text="NÚMERO DOIS"
+                android:text="@string/txtperso"
                 android:textColor="#E41515"
                 android:textSize="35dp"
                 app:backgroundTint="#00FFFFFF"
@@ -109,7 +109,7 @@
                 android:fontFamily="@font/font1"
                 android:paddingLeft="-100dp"
                 android:paddingTop="1sp"
-                android:text="NÚMERO TRÊS"
+                android:text="@string/txtpersonagens"
                 android:textColor="#E41515"
                 android:textSize="35dp"
                 app:backgroundTint="#00FFFFFF"
@@ -130,6 +130,7 @@
                 android:layout_marginTop="30dp"
                 android:background="@drawable/botaopersonagem"
                 android:fontFamily="@font/font1"
+                android:onClick="KlausKlaus"
                 android:paddingLeft="-100dp"
                 android:paddingTop="1sp"
                 android:text="NÚMERO QUATRO"
@@ -238,10 +239,10 @@
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.010"
-        app:layout_constraintHorizontal_bias="0.51"
         app:srcCompat="@drawable/menupersonagens"
         tools:ignore="MissingConstraints" />
 

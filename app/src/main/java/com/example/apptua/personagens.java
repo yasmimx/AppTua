@@ -69,15 +69,6 @@ public class personagens extends AppCompatActivity {
             }
         });
 
-        Button bt5 = (Button) findViewById(R.id.btnklaus);
-
-        bt5.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent it = new Intent(personagens.this, klaus.class);
-                startActivity(it);
-                finish();
-            }
-        });
 
         Button bt6 = (Button) findViewById(R.id.btncinco1);
 
@@ -109,5 +100,10 @@ public class personagens extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void KlausKlaus (View view){
+        Intent klaus = new Intent(personagens.this, Klaus.class);
+        startActivity(klaus);
     }
 }

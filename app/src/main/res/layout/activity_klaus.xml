@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".klaus">
+    tools:context=".Klaus">
 
     <View
         android:id="@+id/view"
@@ -94,7 +94,7 @@
         android:layout_height="115dp"
         android:background="@null"
         android:fontFamily="@font/font1"
-        android:text="NÚMERO"
+        android:text="@string/txtnumero"
         android:textColor="#FFFF"
         android:textSize="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,7 +112,7 @@
         android:layout_height="87dp"
         android:background="@null"
         android:fontFamily="@font/font1"
-        android:text="QUATRO"
+        android:text="@string/txtquatro"
         android:textColor="#ec1a1a"
         android:textSize="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -129,7 +129,7 @@
         android:layout_height="87dp"
         android:background="@null"
         android:fontFamily="@font/font1"
-        android:text="KLAUS"
+        android:text="@string/txtklausname"
         android:textColor="#ffff"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -236,7 +236,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/font2"
-                        android:text="FORÇA"
+                        android:text="@string/txtforca"
                         android:textColor="#FFFF"
                         android:textSize="22sp" />
 
@@ -298,7 +298,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/font2"
-                        android:text="VELOCIDADE"
+                        android:text="@string/txtvelocidade"
                         android:textColor="#FFFF"
                         android:textSize="22sp" />
 
@@ -361,7 +361,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:fontFamily="@font/font2"
-                        android:text="INTELIGÊNCIA"
+                        android:text="@string/txtinteli"
                         android:textColor="#FFFF"
                         android:textSize="22sp" />
 
@@ -424,7 +424,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/font2"
-                        android:text="HABILIDADE"
+                        android:text="@string/txthabili"
                         android:textColor="#FFFF"
                         android:textSize="22sp" />
 
@@ -465,15 +465,19 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="194dp"
-        android:layout_height="37dp"
+    <Button
+        android:id="@+id/btnsensor"
+        android:layout_width="226dp"
+        android:layout_height="35dp"
+        android:background="@drawable/botao"
+        android:backgroundTint="#00FFFFFF"
         android:fontFamily="@font/font2"
+        android:foregroundTint="#00FFFFFF"
         android:switchMinWidth="50dp"
         android:text="@string/switch1"
         android:textColor="#FFFF"
         android:textSize="15dp"
+        app:iconTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"

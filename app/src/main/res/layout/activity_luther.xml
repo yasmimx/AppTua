@@ -95,7 +95,7 @@
         android:layout_height="115dp"
         android:background="@null"
         android:fontFamily="@font/font1"
-        android:text="NÚMERO"
+        android:text="@string/txtnumero"
         android:textColor="#FFFF"
         android:textSize="66dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -111,7 +111,7 @@
         android:layout_height="87dp"
         android:background="@null"
         android:fontFamily="@font/font1"
-        android:text="UM"
+        android:text="@string/txtum"
         android:textColor="#ec1a1a"
         android:textSize="66dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -128,7 +128,7 @@
         android:layout_height="87dp"
         android:background="@null"
         android:fontFamily="@font/font1"
-        android:text="LUTHER"
+        android:text="@string/txtluthername"
         android:textColor="#ffff"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -234,7 +234,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/font2"
-                        android:text="FORÇA"
+                        android:text="@string/txtforca"
                         android:textColor="#FFFF"
                         android:textSize="22sp" />
 
@@ -281,7 +281,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/font2"
-                        android:text="VELOCIDADE"
+                        android:text="txtvelocidade"
                         android:textColor="#FFFF"
                         android:textSize="22sp" />
 
@@ -344,7 +344,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:fontFamily="@font/font2"
-                        android:text="INTELIGÊNCIA"
+                        android:text="@string/txtinteli"
                         android:textColor="#FFFF"
                         android:textSize="22sp" />
 
@@ -407,7 +407,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/font2"
-                        android:text="HABILIDADE"
+                        android:text="@string/txthabili"
                         android:textColor="#FFFF"
                         android:textSize="22sp" />
 

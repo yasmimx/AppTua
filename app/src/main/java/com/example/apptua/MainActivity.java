@@ -1,25 +1,41 @@
 package com.example.apptua;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static androidx.constraintlayout.motion.widget.Debug.getLocation;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import android.Manifest;
 import android.app.SearchManager;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 public class MainActivity extends AppCompatActivity {
 
+    FusedLocationProviderClient fusedLocationClient;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+
+        getLocation();
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -36,6 +52,33 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(requestCode == 10){
+            if(grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                getLocation();
+            }
+            else{
+                {
+                    Toast.makeText(MainActivity.this, "Permissão de localização negada.",Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+    }
+
+    public void getLocation(){
+        if(ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+        }
+        else{
+            requestPermission();
+        }
+    }
+    private void requestPermission(){
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 10);
+    }
+
     public void Trailer (View view) {
         Uri uri = Uri.parse("https://youtu.be/5_4SW8HHfUs");
         Intent trailer = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/5_4SW8HHfUs"));
@@ -44,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Pesquisa (View view){
         Intent pesquisa = new Intent(Intent.ACTION_WEB_SEARCH);
-        String query = "operação big hero Honey Lemon";
+        String query = "Elenco de The Umbrella Academy";
         pesquisa.putExtra(SearchManager.QUERY, query);
         startActivity(pesquisa);
     }

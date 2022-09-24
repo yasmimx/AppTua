@@ -32,17 +32,6 @@ public class cinco extends AppCompatActivity {
             }
         });
 
-        Switch btn5 = (Switch) findViewById(R.id.switch1);
-
-        btn5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-
-                    Toast.makeText(cinco.this, "Lanterna Ativada", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
 
         ImageButton bt4 = (ImageButton) findViewById(R.id.imgbtnvoltar);
 

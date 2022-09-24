@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:fontFamily="@font/font1"
-        android:text="THE UMBRELLA ACADEMY"
+        android:text="@string/txttua"
         android:textColor="#FFFF"
         android:textSize="34dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,7 +77,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-65dp"
                         android:fontFamily="@font/font1"
-                        android:text="POGO"
+                        android:text="@string/txtpogo"
                         android:textColor="#EC1A1A"
                         android:textSize="25sp" />
 
@@ -109,7 +109,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-155dp"
                         android:fontFamily="@font/font1"
-                        android:text="REGINALDO"
+                        android:text="@string/txtsir"
                         android:textColor="#EC1A1A"
                         android:textSize="25sp" />
 
@@ -237,7 +237,7 @@
                 android:onClick="Trailer"
                 android:paddingLeft="-30dp"
                 android:paddingTop="1sp"
-                android:text="TRAILERS"
+                android:text="@string/txtpeixe"
                 android:textSize="20dp"
                 app:backgroundTint="#00FFFFFF"
                 app:rippleColor="#00FFFFFF" />

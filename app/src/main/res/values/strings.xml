@@ -8,4 +8,31 @@
     <string name="switch1">ATIVAR HABILIDADE</string>
     <string name="victor">Vanya inicialmente não conta com poderes e é constantemente humilhada por Hargreeves – que a impede de lutar ao lado de seus irmãos. A garota tem grande habilidade no violino e, no dia em que conhece o Condutor, verá sua vida se transformar. Na série a personagem é interpretada por Ellen Page.</string>
     <string name="cinco">Cinco tem a capacidade de viajar no tempo e, aos 10 anos, desapareceu pois decidiu fugir de casa indo para o futuro. Mais de 50 anos se passaram quando já era um senhor de 60 anos de idade. Ele cai na época em que seus irmãos adotivos estão com 30 anos, mas uma anomalia no tempo fez com que ele ficasse preso em um corpo de 13 anos</string>
+
+
+    <string name="txtperso">NÚMERO DOIS</string>
+    <string name="txtpersonagens">NÚMERO TRÊS</string>
+    <string name="textpersonagens">PERSONAGENS</string>
+    <string name="txtnumero">NÚMERO</string>
+    <string name="txtquatro">QUATRO</string>
+    <string name="txtklausname">KLAUS</string>
+
+    <string name="txtforca">FORÇA</string>
+    <string name="txtvelocidade">VELOCIDADE</string>
+    <string name="txtinteli">INTELIGÊNCIA</string>
+    <string name="txthabili">HABILIDADE</string>
+
+    <string name="txttua">THE UMBRELLA ACADEMY</string>
+    <string name="txtpogo">POGO</string>
+    <string name="txtsir">REGINALDO</string>
+    <string name="txtpeixe">TRAILERS</string>
+    <string name="txtum">UM</string>
+
+    <string name="txtluthername">LUTHER</string>
+    <string name="txtnamevictor">VICTOR</string>
+    <string name="txtsete">SETE</string>
+    <string name="txtcinconame">CINCO</string>
+    <string name="txtcincocima">CINCO</string>
+    <string name="txtdois">DIEGO</string>
+    <string name="txtdoisname">DOIS</string>
 </resources>
